@@ -4,4 +4,4 @@
 git add .
 git commit -m "Update $(date +%x_%H:%M:%S)"
 #git push
-git push -u origin_local master
+git push -u origin master
