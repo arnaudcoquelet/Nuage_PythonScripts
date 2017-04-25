@@ -1,0 +1,2 @@
+# backup the VSD MySQL DB once a week on Sunday at 5am by default
+0 5 * * 0 root /opt/backup-vsd.sh &> /dev/null

@@ -1,0 +1,23 @@
+/mysql-backup/log/vsd_backup*.log
+{
+    daily
+    rotate 0
+    maxage 30
+    missingok
+}
+
+/mysql-backup/vsd_backup*.tgz
+{
+    daily
+    rotate 0 
+    maxage 30
+    missingok
+}
+
+/mysql-backup/vsd_backup*.tgz.md5
+{
+    daily
+    rotate 0
+    maxage 30
+    missingok
+}

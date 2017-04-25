@@ -1,0 +1,40 @@
+{
+  "vsc" :
+   {
+     "VSC1" : 
+      {
+       "device_type": "alcatel_sros",
+       "ip" : "10.1.1.1",
+        "username" : "admin",
+        "password" : "admin",
+        "verbose": false,
+        "port" : 22
+      },
+     "VSC2" : 
+      {
+       "device_type": "alcatel_sros",
+       "ip": "10.1.1.2", 
+       "username": "admin", 
+       "password" : "admin",
+       "verbose": false,
+       "port" : 22
+      }
+  },
+ "email" :
+ {
+  "enable" : true,
+  "format" : "html",
+  "smtp" : {
+   "host" : "myrelay.mail.com",
+   "port" : 25,
+   "tls" : false,
+   "authentication" : false,
+   "username" : "",
+   "password" : ""
+   },
+  "to" : ["me@mail.com"],
+  "from" : "monitor@mail.com",
+  "subject" : "NSG Status"
+ },
+ "output" : "/var/log/VSC/nsg_status.csv"
+}
